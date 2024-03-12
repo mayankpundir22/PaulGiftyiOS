@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E9769062BA02262008BFDE6 /* LaunchAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9769052BA02262008BFDE6 /* LaunchAnimationViewController.swift */; };
+		0E97690E2BA024D8008BFDE6 /* AppInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97690D2BA024D8008BFDE6 /* AppInstance.swift */; };
+		0E9769102BA02607008BFDE6 /* Other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E97690F2BA02607008BFDE6 /* Other.storyboard */; };
+		0E9769122BA0300A008BFDE6 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9769112BA0300A008BFDE6 /* Auth.storyboard */; };
 		0EF782E82B9F282D00E57E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF782E72B9F282D00E57E0F /* AppDelegate.swift */; };
 		0EF782EA2B9F282D00E57E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF782E92B9F282D00E57E0F /* SceneDelegate.swift */; };
 		0EF782EC2B9F282D00E57E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF782EB2B9F282D00E57E0F /* ViewController.swift */; };
@@ -16,6 +20,8 @@
 		0EF782FF2B9F282E00E57E0F /* PaulGiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF782FE2B9F282E00E57E0F /* PaulGiftyTests.swift */; };
 		0EF783092B9F282E00E57E0F /* PaulGiftyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF783082B9F282E00E57E0F /* PaulGiftyUITests.swift */; };
 		0EF7830B2B9F282E00E57E0F /* PaulGiftyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7830A2B9F282E00E57E0F /* PaulGiftyUITestsLaunchTests.swift */; };
+		0EF7831D2B9F361700E57E0F /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7831C2B9F361700E57E0F /* UIStoryboard+Extensions.swift */; };
+		0EF7831F2B9F365900E57E0F /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7831E2B9F365900E57E0F /* NSObject+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E9769052BA02262008BFDE6 /* LaunchAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimationViewController.swift; sourceTree = "<group>"; };
+		0E97690D2BA024D8008BFDE6 /* AppInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstance.swift; sourceTree = "<group>"; };
+		0E97690F2BA02607008BFDE6 /* Other.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Other.storyboard; sourceTree = "<group>"; };
+		0E9769112BA0300A008BFDE6 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		0EF782E42B9F282D00E57E0F /* PaulGifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaulGifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF782E72B9F282D00E57E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF782E92B9F282D00E57E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		0EF783042B9F282E00E57E0F /* PaulGiftyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaulGiftyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF783082B9F282E00E57E0F /* PaulGiftyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaulGiftyUITests.swift; sourceTree = "<group>"; };
 		0EF7830A2B9F282E00E57E0F /* PaulGiftyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaulGiftyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EF7831C2B9F361700E57E0F /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		0EF7831E2B9F365900E57E0F /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E9769012BA013FA008BFDE6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0EF782F22B9F282E00E57E0F /* LaunchScreen.storyboard */,
+				0E9769112BA0300A008BFDE6 /* Auth.storyboard */,
+				0EF782ED2B9F282D00E57E0F /* Main.storyboard */,
+				0E97690F2BA02607008BFDE6 /* Other.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0E9769042BA02232008BFDE6 /* LaunchView */ = {
+			isa = PBXGroup;
+			children = (
+				0E9769052BA02262008BFDE6 /* LaunchAnimationViewController.swift */,
+			);
+			path = LaunchView;
+			sourceTree = "<group>";
+		};
+		0E9769092BA02487008BFDE6 /* SingaltonClasses */ = {
+			isa = PBXGroup;
+			children = (
+				0E97690D2BA024D8008BFDE6 /* AppInstance.swift */,
+			);
+			path = SingaltonClasses;
+			sourceTree = "<group>";
+		};
+		0E97690A2BA024A2008BFDE6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0E97690B2BA024B0008BFDE6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0E97690C2BA024BD008BFDE6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		0EF782DB2B9F282D00E57E0F = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +161,12 @@
 			children = (
 				0EF783172B9F287C00E57E0F /* Delegates */,
 				0EF783182B9F289200E57E0F /* Screens */,
-				0EF783192B9F28A200E57E0F /* Views */,
+				0E9769012BA013FA008BFDE6 /* Storyboards */,
+				0E9769092BA02487008BFDE6 /* SingaltonClasses */,
+				0E97690A2BA024A2008BFDE6 /* Managers */,
+				0E97690B2BA024B0008BFDE6 /* Utilities */,
+				0E97690C2BA024BD008BFDE6 /* Constants */,
+				0EF7831B2B9F35E800E57E0F /* Extensions+Helpers */,
 				0EF7831A2B9F28D500E57E0F /* Resources */,
 			);
 			path = PaulGifty;
@@ -136,18 +201,10 @@
 		0EF783182B9F289200E57E0F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0E9769042BA02232008BFDE6 /* LaunchView */,
 				0EF782EB2B9F282D00E57E0F /* ViewController.swift */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		0EF783192B9F28A200E57E0F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				0EF782F22B9F282E00E57E0F /* LaunchScreen.storyboard */,
-				0EF782ED2B9F282D00E57E0F /* Main.storyboard */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		0EF7831A2B9F28D500E57E0F /* Resources */ = {
@@ -157,6 +214,15 @@
 				0EF782F52B9F282E00E57E0F /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0EF7831B2B9F35E800E57E0F /* Extensions+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7831C2B9F361700E57E0F /* UIStoryboard+Extensions.swift */,
+				0EF7831E2B9F365900E57E0F /* NSObject+Extensions.swift */,
+			);
+			path = "Extensions+Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +330,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF782F42B9F282E00E57E0F /* LaunchScreen.storyboard in Resources */,
+				0E9769102BA02607008BFDE6 /* Other.storyboard in Resources */,
+				0E9769122BA0300A008BFDE6 /* Auth.storyboard in Resources */,
 				0EF782F12B9F282E00E57E0F /* Assets.xcassets in Resources */,
 				0EF782EF2B9F282D00E57E0F /* Main.storyboard in Resources */,
 			);
@@ -290,9 +358,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF7831F2B9F365900E57E0F /* NSObject+Extensions.swift in Sources */,
 				0EF782EC2B9F282D00E57E0F /* ViewController.swift in Sources */,
+				0E97690E2BA024D8008BFDE6 /* AppInstance.swift in Sources */,
 				0EF782E82B9F282D00E57E0F /* AppDelegate.swift in Sources */,
+				0EF7831D2B9F361700E57E0F /* UIStoryboard+Extensions.swift in Sources */,
 				0EF782EA2B9F282D00E57E0F /* SceneDelegate.swift in Sources */,
+				0E9769062BA02262008BFDE6 /* LaunchAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

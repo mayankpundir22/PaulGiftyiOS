@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("\n\n************** Main VC Called *****************\n\n")
         // Do any additional setup after loading the view.
     }
 

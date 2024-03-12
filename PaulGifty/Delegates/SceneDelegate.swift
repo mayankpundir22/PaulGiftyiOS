@@ -8,15 +8,24 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
-    var window: UIWindow?
-
-
+    
+    internal var window: UIWindow?
+    
+    static var sceneDelegate: SceneDelegate? {
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        return windowScene?.delegate as? SceneDelegate
+    }
+    
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let scene = (scene as? UIWindowScene) else { return }
+        changeAppearences()
+        
+        self.window = UIWindow(windowScene: scene)
+        updateRootController()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -46,7 +55,42 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
 }
 
+
+//MARK: Additional Functionalities
+extension SceneDelegate {
+    
+    func updateRootController() {
+        //CASE: If
+        if AppInstance.shared.isShowLaunchAnimation {
+            AppInstance.shared.isShowLaunchAnimation = false
+            let launchAnimationVC = Storyboard.Other.instantiateVC(type: LaunchAnimationViewController.self)!
+            self.window?.rootViewController = launchAnimationVC
+            self.window?.makeKeyAndVisible()
+            return
+        }
+        //MARK: Testing Purpose Only - Bypass the logic ----
+        let navController = UINavigationController()
+        let firstVC = Storyboard.Main.instantiateVC(type: ViewController.self)!
+        navController.viewControllers = [firstVC]
+        self.window?.rootViewController = navController
+         //-------------------------------- Testing Only ----------------------------------------------
+        
+        
+        
+        self.window?.makeKeyAndVisible()
+    }
+    
+    // MARK:- Change Appearance
+    private func changeAppearences() {
+        UINavigationBar.appearance().tintColor = UIColor.black
+        UINavigationBar.appearance().barTintColor = UIColor.white
+        UINavigationBar.appearance().shadowImage = UIImage()
+        //UINavigationBar.appearance().isTranslucent = true
+        UITabBar.appearance().tintColor = .white
+        
+        //let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: Fonts.poppinsRegular, size: 15) ?? .systemFont(ofSize: 15)]
+        //UINavigationBar.appearance().titleTextAttributes = textAttributes
+    }
+}
