@@ -30,3 +30,9 @@ public enum AppPolicies: String {
         }
     }
 }
+
+
+struct ValidationRegex {
+    static let email : String               = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+    static let password : String            = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@!$"
+}

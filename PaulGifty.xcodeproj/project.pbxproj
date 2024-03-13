@@ -8,10 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		04E799D65BB515490037456B /* Pods_PaulGifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B07AB58F0AB479063CC583 /* Pods_PaulGifty.framework */; };
+		0E2288702BA1A2030043FD1A /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E22886F2BA1A2030043FD1A /* UIAlertController.swift */; };
+		0E2288722BA1A2320043FD1A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2288712BA1A2320043FD1A /* String+Extensions.swift */; };
+		0E2288742BA1A2DC0043FD1A /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2288732BA1A2DC0043FD1A /* UIApplication+Extensions.swift */; };
+		0E3EDCEB2BA1A610003C3379 /* LoginWithOTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3EDCEA2BA1A610003C3379 /* LoginWithOTPViewModel.swift */; };
+		0E3EDCEF2BA1A65A003C3379 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3EDCEE2BA1A65A003C3379 /* BaseViewController.swift */; };
+		0E3EDCF12BA1A66C003C3379 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3EDCF02BA1A66C003C3379 /* BaseViewModel.swift */; };
 		0E9769062BA02262008BFDE6 /* LaunchAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9769052BA02262008BFDE6 /* LaunchAnimationViewController.swift */; };
 		0E97690E2BA024D8008BFDE6 /* AppInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97690D2BA024D8008BFDE6 /* AppInstance.swift */; };
 		0E9769102BA02607008BFDE6 /* Other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E97690F2BA02607008BFDE6 /* Other.storyboard */; };
 		0E9769122BA0300A008BFDE6 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9769112BA0300A008BFDE6 /* Auth.storyboard */; };
+		0E99F20E2BA1A9B4002A2AA4 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99F20D2BA1A9B4002A2AA4 /* LoadingViewController.swift */; };
+		0E99F2102BA1C90D002A2AA4 /* RectViewWithTransparentCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99F20F2BA1C90D002A2AA4 /* RectViewWithTransparentCircle.swift */; };
+		0E99F2122BA1C9F2002A2AA4 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99F2112BA1C9F2002A2AA4 /* UIView+Extensions.swift */; };
 		0EBD520B2BA05CC70020552B /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD520A2BA05CC70020552B /* UIFont+Additions.swift */; };
 		0EBD52162BA0624E0020552B /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EBD520E2BA0624E0020552B /* Gilroy-Bold.ttf */; };
 		0EBD52172BA0624E0020552B /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EBD520F2BA0624E0020552B /* Gilroy-Regular.ttf */; };
@@ -61,10 +70,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E22886F2BA1A2030043FD1A /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		0E2288712BA1A2320043FD1A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		0E2288732BA1A2DC0043FD1A /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		0E3EDCEA2BA1A610003C3379 /* LoginWithOTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithOTPViewModel.swift; sourceTree = "<group>"; };
+		0E3EDCEE2BA1A65A003C3379 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0E3EDCF02BA1A66C003C3379 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		0E9769052BA02262008BFDE6 /* LaunchAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimationViewController.swift; sourceTree = "<group>"; };
 		0E97690D2BA024D8008BFDE6 /* AppInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstance.swift; sourceTree = "<group>"; };
 		0E97690F2BA02607008BFDE6 /* Other.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Other.storyboard; sourceTree = "<group>"; };
 		0E9769112BA0300A008BFDE6 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		0E99F20D2BA1A9B4002A2AA4 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		0E99F20F2BA1C90D002A2AA4 /* RectViewWithTransparentCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectViewWithTransparentCircle.swift; sourceTree = "<group>"; };
+		0E99F2112BA1C9F2002A2AA4 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		0EBD520A2BA05CC70020552B /* UIFont+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
 		0EBD520E2BA0624E0020552B /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		0EBD520F2BA0624E0020552B /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
@@ -135,6 +153,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E3EDCE92BA1A5F5003C3379 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0E3EDCEA2BA1A610003C3379 /* LoginWithOTPViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0E3EDCEC2BA1A634003C3379 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				0E3EDCEE2BA1A65A003C3379 /* BaseViewController.swift */,
+				0E3EDCED2BA1A64A003C3379 /* ViewModel */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		0E3EDCED2BA1A64A003C3379 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0E3EDCF02BA1A66C003C3379 /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0E9769012BA013FA008BFDE6 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +228,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		0E99F20C2BA1A995002A2AA4 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				0E99F20D2BA1A9B4002A2AA4 /* LoadingViewController.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
 		0EBD520C2BA0620C0020552B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				0EBD52212BA06F6B0020552B /* LoginWithOTPViewController.swift */,
+				0E3EDCE92BA1A5F5003C3379 /* ViewModel */,
 			);
 			path = LoginWithOTPView;
 			sourceTree = "<group>";
@@ -228,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				0EC919E32BA1737F008BE451 /* CheckboxButton.swift */,
+				0E99F20F2BA1C90D002A2AA4 /* RectViewWithTransparentCircle.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -301,6 +354,8 @@
 			isa = PBXGroup;
 			children = (
 				0E9769042BA02232008BFDE6 /* LaunchView */,
+				0E99F20C2BA1A995002A2AA4 /* LoadingView */,
+				0E3EDCEC2BA1A634003C3379 /* BaseView */,
 				0EBD521E2BA065250020552B /* AuthModule */,
 				0EF782EB2B9F282D00E57E0F /* ViewController.swift */,
 			);
@@ -320,12 +375,16 @@
 		0EF7831B2B9F35E800E57E0F /* Extensions+Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				0E22886F2BA1A2030043FD1A /* UIAlertController.swift */,
 				0EF7831C2B9F361700E57E0F /* UIStoryboard+Extensions.swift */,
+				0E2288732BA1A2DC0043FD1A /* UIApplication+Extensions.swift */,
+				0EC919E52BA17C78008BE451 /* UIViewController+Extensions.swift */,
+				0E99F2112BA1C9F2002A2AA4 /* UIView+Extensions.swift */,
 				0EF7831E2B9F365900E57E0F /* NSObject+Extensions.swift */,
 				0EBD520A2BA05CC70020552B /* UIFont+Additions.swift */,
 				0EBD52232BA07B800020552B /* UIColor+Extensions.swift */,
 				0EC919DF2BA16F0A008BE451 /* MDCOutlinedTextField+Extensions.swift */,
-				0EC919E52BA17C78008BE451 /* UIViewController+Extensions.swift */,
+				0E2288712BA1A2320043FD1A /* String+Extensions.swift */,
 			);
 			path = "Extensions+Helpers";
 			sourceTree = "<group>";
@@ -604,17 +663,26 @@
 			files = (
 				0EBD520B2BA05CC70020552B /* UIFont+Additions.swift in Sources */,
 				0EBD52242BA07B800020552B /* UIColor+Extensions.swift in Sources */,
+				0E2288742BA1A2DC0043FD1A /* UIApplication+Extensions.swift in Sources */,
 				0EC919E62BA17C78008BE451 /* UIViewController+Extensions.swift in Sources */,
 				0EC919E02BA16F0A008BE451 /* MDCOutlinedTextField+Extensions.swift in Sources */,
+				0E3EDCEF2BA1A65A003C3379 /* BaseViewController.swift in Sources */,
+				0E99F2122BA1C9F2002A2AA4 /* UIView+Extensions.swift in Sources */,
 				0EF7831F2B9F365900E57E0F /* NSObject+Extensions.swift in Sources */,
+				0E3EDCEB2BA1A610003C3379 /* LoginWithOTPViewModel.swift in Sources */,
 				0EC919EA2BA18B05008BE451 /* Constants.swift in Sources */,
+				0E99F2102BA1C90D002A2AA4 /* RectViewWithTransparentCircle.swift in Sources */,
 				0EF782EC2B9F282D00E57E0F /* ViewController.swift in Sources */,
 				0EC919E82BA18AF6008BE451 /* Strings.swift in Sources */,
 				0E97690E2BA024D8008BFDE6 /* AppInstance.swift in Sources */,
 				0EBD52222BA06F6B0020552B /* LoginWithOTPViewController.swift in Sources */,
 				0EF782E82B9F282D00E57E0F /* AppDelegate.swift in Sources */,
 				0EC919E42BA1737F008BE451 /* CheckboxButton.swift in Sources */,
+				0E2288722BA1A2320043FD1A /* String+Extensions.swift in Sources */,
+				0E2288702BA1A2030043FD1A /* UIAlertController.swift in Sources */,
+				0E3EDCF12BA1A66C003C3379 /* BaseViewModel.swift in Sources */,
 				0EF7831D2B9F361700E57E0F /* UIStoryboard+Extensions.swift in Sources */,
+				0E99F20E2BA1A9B4002A2AA4 /* LoadingViewController.swift in Sources */,
 				0EF782EA2B9F282D00E57E0F /* SceneDelegate.swift in Sources */,
 				0E9769062BA02262008BFDE6 /* LaunchAnimationViewController.swift in Sources */,
 			);

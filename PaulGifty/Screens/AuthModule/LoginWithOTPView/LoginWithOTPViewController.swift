@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Toast_Swift
 import MaterialComponents
 
-class LoginWithOTPViewController: UIViewController {
+class LoginWithOTPViewController: BaseViewController {
     
     @IBOutlet weak var screenTitleLabel: UILabel!
     @IBOutlet weak var screenDescLabel: UILabel!
@@ -34,6 +35,19 @@ class LoginWithOTPViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
+    
+    @IBAction func getOTPButtonPressed(_ sender: Any) {
+        guard policyCheckBox.isChecked else {
+            view.makeToast(AlertMessage.ACCEPT_POLICY_AND_TERMS)
+            //UIAlertController.showAlert(self, message: AlertMessage.ACCEPT_POLICY_AND_TERMS)
+            return
+        }
+        showLoadingIndicator()
+        _ = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { [weak self] timer in
+            self?.hideLoadingIndicator()
+        }
+    }
+    
     
     private func setupLayout() {
         phoneNoTextField.label.text = "Enter Phone number here"

@@ -10,6 +10,7 @@ target 'PaulGifty' do
   pod 'IQKeyboardManagerSwift'
   pod 'MaterialComponents/TextControls+OutlinedTextAreas'
   pod 'MaterialComponents/TextControls+OutlinedTextFields'
+  pod 'Toast-Swift', '~> 5.1.0'
 
 
   target 'PaulGiftyTests' do

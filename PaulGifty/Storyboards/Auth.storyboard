@@ -99,6 +99,9 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
                                             <color key="baseForegroundColor" name="PeachOrangeColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="getOTPButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ayH-be-hnw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
