@@ -62,17 +62,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 extension SceneDelegate {
     
     func updateRootController() {
-        //CASE: If
-        if AppInstance.shared.isShowLaunchAnimation {
+        //CASE: In case to show Launch Screen Animation
+        /*if AppInstance.shared.isShowLaunchAnimation {
             AppInstance.shared.isShowLaunchAnimation = false
             let launchAnimationVC = Storyboard.Other.instantiateVC(type: LaunchAnimationViewController.self)!
             self.window?.rootViewController = launchAnimationVC
             self.window?.makeKeyAndVisible()
             return
-        }
+        }*/
         //MARK: Testing Purpose Only - Bypass the logic ----
         let navController = UINavigationController()
-        let firstVC = Storyboard.Main.instantiateVC(type: ViewController.self)!
+        let firstVC = Storyboard.Auth.instantiateVC(type: LoginWithOTPViewController.self)!
         navController.viewControllers = [firstVC]
         self.window?.rootViewController = navController
          //-------------------------------- Testing Only ----------------------------------------------

@@ -10,7 +10,6 @@ import UIKit
 
 enum Storyboard: String {
     case Auth
-    case Home
     case Main
     case Other
 }
