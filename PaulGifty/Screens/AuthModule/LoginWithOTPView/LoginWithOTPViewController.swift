@@ -9,7 +9,8 @@ import UIKit
 import MaterialComponents
 
 class LoginWithOTPViewController: BaseViewController {
-    
+        
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var screenTitleLabel: UILabel!
     @IBOutlet weak var screenDescLabel: UILabel!
     @IBOutlet weak var phoneNoTextField: MDCOutlinedTextField!
@@ -39,7 +40,7 @@ class LoginWithOTPViewController: BaseViewController {
         super.viewWillLayoutSubviews()
         if !isLayoutAdjusted {
             isLayoutAdjusted.toggle()
-            //phoneNoTextField.containerRadius = 16
+            mainView.roundCorners([.topLeft, .topRight], radius: 30)
         }
     }*/
     
@@ -52,6 +53,7 @@ class LoginWithOTPViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        mainView.roundCorners([.topLeft, .topRight], radius: 20)
     }
     
     /*override func viewDidDisappear(_ animated: Bool) {
@@ -84,7 +86,7 @@ class LoginWithOTPViewController: BaseViewController {
         viewModel.isOTPSent = false
         screenTitleLabel.font = UIFont.gilroy(style: .semibold, size: 16)
         screenDescLabel.font = UIFont.gilroy(style: .regular, size: 12)
-        submitButton.layer.cornerRadius = 7
+        submitButton.layer.cornerRadius = submitButton.frame.height / 2
         submitButton.titleLabel?.font = UIFont.gilroy(style: .bold, size: 12)
         
         otpResendMsgLabel.font = UIFont.gilroy(style: .regular, size: 12)
@@ -92,7 +94,7 @@ class LoginWithOTPViewController: BaseViewController {
         otpResendButton.titleLabel?.font = UIFont.gilroy(style: .regular, size: 12)
         
         let phoneTFLeftView = UILabel(frame: CGRect(x: 0, y: 0, width: 30, height: phoneNoTextField.frame.height * 0.8))
-        phoneTFLeftView.font = UIFont.gilroy(style: .regular, size: 14)
+        phoneTFLeftView.font = UIFont.gilroy(style: .regular, size: 16)
         phoneTFLeftView.backgroundColor = .clear
         phoneTFLeftView.text = "+91"
         phoneTFLeftView.textColor = .appRoyalBlue
@@ -175,6 +177,8 @@ class LoginWithOTPViewController: BaseViewController {
 extension LoginWithOTPViewController {
     
     private func invalidateOTPTimer() {
+        timerSeconds = LimitCount.maxOTPResendSeconds
+        otpResendTimeLabel.text = "(\(Date.intToMinSec(timerSeconds)))"
         timer?.invalidate()
         timer = nil
     }
@@ -183,8 +187,7 @@ extension LoginWithOTPViewController {
         invalidateOTPTimer()
         otpResendButton.isEnabled = false
         otpResendButton.setTitleColor(UIColor.appFireRedColor.withAlphaComponent(0.5), for: .normal)
-        timerSeconds = LimitCount.maxOTPResendSeconds
-        otpResendTimeLabel.text = "(\(Date.intToMinSec(timerSeconds)))"
+        
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] timer in
             guard let self = self else { return }
             self.timerSeconds -= 1

@@ -48,8 +48,8 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="UgE-6C-aSa">
-                                        <rect key="frame" x="16" y="103.66666666666663" width="361" height="191"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="UgE-6C-aSa">
+                                        <rect key="frame" x="16" y="107.66666666666663" width="361" height="192"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Q5-Xn-Nna" userLabel="PhoneNoStackView">
                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="84"/>
@@ -96,7 +96,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jQ8-Tk-Z4e" userLabel="OTPStackView">
-                                                <rect key="frame" x="0.0" y="108" width="361" height="83"/>
+                                                <rect key="frame" x="0.0" y="109" width="361" height="83"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5E-3q-8g9" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="45"/>
@@ -172,7 +172,7 @@
                                     <constraint firstItem="UgE-6C-aSa" firstAttribute="leading" secondItem="C2O-BH-fen" secondAttribute="leading" constant="16" id="90D-Sa-BrD"/>
                                     <constraint firstAttribute="trailing" secondItem="XF1-dU-tcr" secondAttribute="trailing" constant="16" id="AQe-xr-LvP"/>
                                     <constraint firstAttribute="trailing" secondItem="UgE-6C-aSa" secondAttribute="trailing" constant="16" id="Cmj-g6-gsF"/>
-                                    <constraint firstItem="UgE-6C-aSa" firstAttribute="top" secondItem="XF1-dU-tcr" secondAttribute="bottom" constant="26" id="HPY-Bz-sF9"/>
+                                    <constraint firstItem="UgE-6C-aSa" firstAttribute="top" secondItem="XF1-dU-tcr" secondAttribute="bottom" constant="30" id="HPY-Bz-sF9"/>
                                     <constraint firstAttribute="trailing" secondItem="qHr-Xc-k0e" secondAttribute="trailing" constant="16" id="HYK-n6-00S"/>
                                     <constraint firstItem="XF1-dU-tcr" firstAttribute="leading" secondItem="C2O-BH-fen" secondAttribute="leading" constant="16" id="Meo-zz-zlQ"/>
                                     <constraint firstItem="qHr-Xc-k0e" firstAttribute="top" relation="greaterThanOrEqual" secondItem="UgE-6C-aSa" secondAttribute="bottom" constant="40" id="Zev-u6-qBm"/>
@@ -195,6 +195,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="mainView" destination="C2O-BH-fen" id="yQP-wq-2ek"/>
                         <outlet property="otpResendButton" destination="MQE-Dt-koP" id="nn8-NP-gJw"/>
                         <outlet property="otpResendMsgLabel" destination="koF-UD-wQT" id="rq7-5S-l1S"/>
                         <outlet property="otpResendTimeLabel" destination="rkh-e2-nM2" id="1Aq-eA-Qdy"/>
