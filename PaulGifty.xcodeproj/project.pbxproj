@@ -49,6 +49,8 @@
 		0EF7830B2B9F282E00E57E0F /* PaulGiftyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7830A2B9F282E00E57E0F /* PaulGiftyUITestsLaunchTests.swift */; };
 		0EF7831D2B9F361700E57E0F /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7831C2B9F361700E57E0F /* UIStoryboard+Extensions.swift */; };
 		0EF7831F2B9F365900E57E0F /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7831E2B9F365900E57E0F /* NSObject+Extensions.swift */; };
+		0EFC8A4C2BA3128300574F2A /* MapExistingCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC8A4B2BA3128300574F2A /* MapExistingCardViewController.swift */; };
+		0EFC8A4E2BA3129200574F2A /* MapExistingCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC8A4D2BA3129200574F2A /* MapExistingCardViewModel.swift */; };
 		2CF209728B2D304AD7C85208 /* Pods_PaulGifty_PaulGiftyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335811125DCF18B2B14EC033 /* Pods_PaulGifty_PaulGiftyUITests.framework */; };
 		691D3F17E5BB5D6BE23A7892 /* Pods_PaulGiftyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54DE789C8DE2E095A58207E /* Pods_PaulGiftyTests.framework */; };
 /* End PBXBuildFile section */
@@ -116,6 +118,8 @@
 		0EF7830A2B9F282E00E57E0F /* PaulGiftyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaulGiftyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0EF7831C2B9F361700E57E0F /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
 		0EF7831E2B9F365900E57E0F /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		0EFC8A4B2BA3128300574F2A /* MapExistingCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapExistingCardViewController.swift; sourceTree = "<group>"; };
+		0EFC8A4D2BA3129200574F2A /* MapExistingCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapExistingCardViewModel.swift; sourceTree = "<group>"; };
 		335811125DCF18B2B14EC033 /* Pods_PaulGifty_PaulGiftyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaulGifty_PaulGiftyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D4A45D6E8ABA983BBA699E /* Pods-PaulGifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaulGifty.release.xcconfig"; path = "Target Support Files/Pods-PaulGifty/Pods-PaulGifty.release.xcconfig"; sourceTree = "<group>"; };
 		3A14C5C8612F639A33FD6A13 /* Pods-PaulGifty-PaulGiftyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaulGifty-PaulGiftyUITests.release.xcconfig"; path = "Target Support Files/Pods-PaulGifty-PaulGiftyUITests/Pods-PaulGifty-PaulGiftyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -265,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				0EBD52202BA06F110020552B /* LoginWithOTPView */,
+				0EFC8A4A2BA3123000574F2A /* MapExistingCardView */,
 			);
 			path = AuthModule;
 			sourceTree = "<group>";
@@ -355,11 +360,11 @@
 		0EF783182B9F289200E57E0F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0EF782EB2B9F282D00E57E0F /* ViewController.swift */,
 				0E9769042BA02232008BFDE6 /* LaunchView */,
 				0E99F20C2BA1A995002A2AA4 /* LoadingView */,
 				0E3EDCEC2BA1A634003C3379 /* BaseView */,
 				0EBD521E2BA065250020552B /* AuthModule */,
-				0EF782EB2B9F282D00E57E0F /* ViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -390,6 +395,23 @@
 				0EC6801A2BA2D94A0095C4A3 /* Date+Extensions.swift */,
 			);
 			path = "Extensions+Helpers";
+			sourceTree = "<group>";
+		};
+		0EFC8A4A2BA3123000574F2A /* MapExistingCardView */ = {
+			isa = PBXGroup;
+			children = (
+				0EFC8A4B2BA3128300574F2A /* MapExistingCardViewController.swift */,
+				0EFC8A4F2BA3129A00574F2A /* ViewModel */,
+			);
+			path = MapExistingCardView;
+			sourceTree = "<group>";
+		};
+		0EFC8A4F2BA3129A00574F2A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0EFC8A4D2BA3129200574F2A /* MapExistingCardViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7190DA6DB22A860C7E49A900 /* Pods */ = {
@@ -664,6 +686,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EFC8A4C2BA3128300574F2A /* MapExistingCardViewController.swift in Sources */,
 				0EBD520B2BA05CC70020552B /* UIFont+Additions.swift in Sources */,
 				0EBD52242BA07B800020552B /* UIColor+Extensions.swift in Sources */,
 				0E2288742BA1A2DC0043FD1A /* UIApplication+Extensions.swift in Sources */,
@@ -674,6 +697,7 @@
 				0EF7831F2B9F365900E57E0F /* NSObject+Extensions.swift in Sources */,
 				0E3EDCEB2BA1A610003C3379 /* LoginWithOTPViewModel.swift in Sources */,
 				0EC919EA2BA18B05008BE451 /* Constants.swift in Sources */,
+				0EFC8A4E2BA3129200574F2A /* MapExistingCardViewModel.swift in Sources */,
 				0E99F2102BA1C90D002A2AA4 /* RectViewWithTransparentCircle.swift in Sources */,
 				0EF782EC2B9F282D00E57E0F /* ViewController.swift in Sources */,
 				0EC919E82BA18AF6008BE451 /* Strings.swift in Sources */,

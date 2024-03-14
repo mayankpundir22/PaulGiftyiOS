@@ -81,6 +81,9 @@ class LoginWithOTPViewController: BaseViewController {
     
     
     private func setupLayout() {
+        if let bgColor = view.backgroundColor {
+            mainView.backgroundColor = bgColor
+        }
         phoneNoTextField.delegate = self
         otpTextField.delegate = self
         viewModel.isOTPSent = false
@@ -151,7 +154,7 @@ class LoginWithOTPViewController: BaseViewController {
     }
     
     private func initializeViewModel() {
-        viewModel.reloadScreenUIClosure = { [weak self] () in
+        viewModel.reloadScreenUIClosure = { [weak self] in
             DispatchQueue.main.async {
                 self?.updateScreenUI()
                 self?.startOTPTimer()
@@ -241,6 +244,7 @@ extension LoginWithOTPViewController: UITextFieldDelegate {
             break
         case otpTextField:
             viewModel.otpCode = text ?? textField.text
+            break
         default:
             break
         }

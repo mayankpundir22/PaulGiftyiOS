@@ -29,7 +29,10 @@ public struct AlertMessage {
     static let EMPTY_EMAIL                  = "Please enter an email address"
     static let INVALID_EMAIL                = "Please enter a valid email address."
     static let INVALID_PHONE_NUMBER         = "Please enter a valid phone number."
+    static let INVALID_CARD_LAST_DIGITS     = "Please enter card's last %d digits."
+    static let INVALID_CARD_KIT_NO          = "Please enter valid card KIT number."
     static let INVALID_SELECTION            = "Kindly choose one option from the available choices."
+    static let INCOMPLETE_CARD_KIT_NUMBER   = "Your card kit number appears incomplete. Please enter all %d digits."
     
     static let NO_PASSWORD                  = "Please enter a minimum %d character password."
     static let OLD_PASSWORD                 = "Please enter old password."

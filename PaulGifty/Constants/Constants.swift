@@ -42,10 +42,12 @@ public enum AppPolicies: String {
 
 
 struct LimitCount {
-    static let otpDigitsCount: Int      = 6
-    static let phoneNoDigitsCount: Int  = 10
-    static let maxDecimalPlaces: Int    = 2
-    static let maxOTPResendSeconds: Int = 60
+    static let otpDigitsCount: Int          = 6
+    static let phoneNoDigitsCount: Int      = 10
+    static let cardKitNoDigitsCount: Int    = 16
+    static let maxCardDigitsAllowed: Int    = 4
+    static let maxDecimalPlaces: Int        = 2
+    static let maxOTPResendSeconds: Int     = 60
 }
 
 
