@@ -9,6 +9,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login WithOTP View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -43,45 +48,102 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UgE-6C-aSa">
-                                        <rect key="frame" x="16" y="102.66666666666663" width="361" height="117"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="UgE-6C-aSa">
+                                        <rect key="frame" x="16" y="103.66666666666663" width="361" height="191"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rB6-bh-8zC" customClass="MDCOutlinedTextField">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="yes" smartQuotesType="yes" textContentType="tel"/>
-                                            </textField>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cK4-Pk-Vfj">
-                                                <rect key="frame" x="0.0" y="34" width="361" height="83"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Q5-Xn-Nna" userLabel="PhoneNoStackView">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="84"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYW-b5-Rgt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="83"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rB6-bh-8zC" customClass="MDCOutlinedTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="yes" smartQuotesType="yes" textContentType="tel"/>
+                                                    </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cK4-Pk-Vfj" userLabel="PolicyStackView">
+                                                        <rect key="frame" x="0.0" y="34" width="361" height="50"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sv8-rf-8cJ" customClass="CheckboxButton" customModule="PaulGifty" customModuleProvider="target">
-                                                                <rect key="frame" x="11" y="31.666666666666686" width="20" height="20"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYW-b5-Rgt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="42" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sv8-rf-8cJ" customClass="CheckboxButton" customModule="PaulGifty" customModuleProvider="target">
+                                                                        <rect key="frame" x="11" y="15" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="CAo-cz-7Lv"/>
+                                                                            <constraint firstAttribute="width" constant="20" id="nVH-8c-6yL"/>
+                                                                        </constraints>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" image="square" catalog="system"/>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="20" id="CAo-cz-7Lv"/>
-                                                                    <constraint firstAttribute="width" constant="20" id="nVH-8c-6yL"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Ny9-HE-MH4"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="fjl-w6-xR9"/>
+                                                                    <constraint firstItem="sv8-rf-8cJ" firstAttribute="centerX" secondItem="lYW-b5-Rgt" secondAttribute="centerX" id="taF-PX-Jl3"/>
+                                                                    <constraint firstItem="sv8-rf-8cJ" firstAttribute="centerY" secondItem="lYW-b5-Rgt" secondAttribute="centerY" id="uQ5-kz-kJq"/>
                                                                 </constraints>
+                                                            </view>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="By creating the account, I accept to the Privacy Policy &amp; Terms and Conditions." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wa6-Kg-h1k">
+                                                                <rect key="frame" x="42" y="0.0" width="319" height="50"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <color key="textColor" name="RoyalBlueColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jQ8-Tk-Z4e" userLabel="OTPStackView">
+                                                <rect key="frame" x="0.0" y="108" width="361" height="83"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5E-3q-8g9" customClass="MDCOutlinedTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="YQj-OT-KmV"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="yes" smartQuotesType="yes" textContentType="one-time-code"/>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FK-XS-hKr">
+                                                        <rect key="frame" x="0.0" y="45.000000000000057" width="361" height="38"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didn’t receive the OTP?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koF-UD-wQT">
+                                                                <rect key="frame" x="0.0" y="12" width="133.66666666666666" height="14.333333333333336"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <color key="textColor" name="RoyalBlueColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQE-Dt-koP">
+                                                                <rect key="frame" x="133.66666666666666" y="5.6666666666666288" width="77" height="27"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                <state key="normal" image="square" catalog="system"/>
+                                                                <state key="normal" title=" Resend OTP ">
+                                                                    <color key="titleColor" name="FireRedColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="otpResendButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Puv-99-RV6"/>
+                                                                </connections>
                                                             </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(00:59)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkh-e2-nM2">
+                                                                <rect key="frame" x="210.66666666666666" y="12" width="43.333333333333343" height="14.333333333333336"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <color key="textColor" name="RoyalBlueColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Ny9-HE-MH4"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="fjl-w6-xR9"/>
-                                                            <constraint firstItem="sv8-rf-8cJ" firstAttribute="centerX" secondItem="lYW-b5-Rgt" secondAttribute="centerX" id="taF-PX-Jl3"/>
-                                                            <constraint firstItem="sv8-rf-8cJ" firstAttribute="centerY" secondItem="lYW-b5-Rgt" secondAttribute="centerY" id="uQ5-kz-kJq"/>
+                                                            <constraint firstItem="rkh-e2-nM2" firstAttribute="centerY" secondItem="4FK-XS-hKr" secondAttribute="centerY" id="1KK-aY-KTl"/>
+                                                            <constraint firstItem="koF-UD-wQT" firstAttribute="leading" secondItem="4FK-XS-hKr" secondAttribute="leading" id="1pA-ah-58n"/>
+                                                            <constraint firstItem="MQE-Dt-koP" firstAttribute="centerY" secondItem="4FK-XS-hKr" secondAttribute="centerY" id="3Gy-ud-f0c"/>
+                                                            <constraint firstItem="koF-UD-wQT" firstAttribute="centerY" secondItem="4FK-XS-hKr" secondAttribute="centerY" id="8tg-Ha-sIu"/>
+                                                            <constraint firstItem="rkh-e2-nM2" firstAttribute="leading" secondItem="MQE-Dt-koP" secondAttribute="trailing" id="iwa-q7-BZx"/>
+                                                            <constraint firstItem="MQE-Dt-koP" firstAttribute="leading" secondItem="koF-UD-wQT" secondAttribute="trailing" id="lMC-62-Eab"/>
+                                                            <constraint firstAttribute="height" constant="38" id="qd4-QU-dGq"/>
                                                         </constraints>
                                                     </view>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="By creating the account, I accept to the Privacy Policy &amp; Terms and Conditions." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wa6-Kg-h1k">
-                                                        <rect key="frame" x="42" y="0.0" width="319" height="83"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <color key="textColor" name="RoyalBlueColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </stackView>
@@ -89,7 +151,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHr-Xc-k0e">
-                                        <rect key="frame" x="16" y="476.33333333333331" width="361" height="48.999999999999943"/>
+                                        <rect key="frame" x="16" y="446.33333333333331" width="361" height="49"/>
                                         <color key="backgroundColor" name="RoyalBlueColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="us9-PJ-SDD"/>
@@ -100,7 +162,7 @@
                                             <color key="baseForegroundColor" name="PeachOrangeColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="getOTPButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ayH-be-hnw"/>
+                                            <action selector="submitButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xhG-r1-GhC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -110,11 +172,12 @@
                                     <constraint firstItem="UgE-6C-aSa" firstAttribute="leading" secondItem="C2O-BH-fen" secondAttribute="leading" constant="16" id="90D-Sa-BrD"/>
                                     <constraint firstAttribute="trailing" secondItem="XF1-dU-tcr" secondAttribute="trailing" constant="16" id="AQe-xr-LvP"/>
                                     <constraint firstAttribute="trailing" secondItem="UgE-6C-aSa" secondAttribute="trailing" constant="16" id="Cmj-g6-gsF"/>
-                                    <constraint firstItem="UgE-6C-aSa" firstAttribute="top" secondItem="XF1-dU-tcr" secondAttribute="bottom" constant="25" id="HPY-Bz-sF9"/>
+                                    <constraint firstItem="UgE-6C-aSa" firstAttribute="top" secondItem="XF1-dU-tcr" secondAttribute="bottom" constant="26" id="HPY-Bz-sF9"/>
                                     <constraint firstAttribute="trailing" secondItem="qHr-Xc-k0e" secondAttribute="trailing" constant="16" id="HYK-n6-00S"/>
                                     <constraint firstItem="XF1-dU-tcr" firstAttribute="leading" secondItem="C2O-BH-fen" secondAttribute="leading" constant="16" id="Meo-zz-zlQ"/>
+                                    <constraint firstItem="qHr-Xc-k0e" firstAttribute="top" relation="greaterThanOrEqual" secondItem="UgE-6C-aSa" secondAttribute="bottom" constant="40" id="Zev-u6-qBm"/>
                                     <constraint firstItem="XF1-dU-tcr" firstAttribute="top" secondItem="C2O-BH-fen" secondAttribute="top" constant="40" id="a3M-Bs-Ltf"/>
-                                    <constraint firstAttribute="bottom" secondItem="qHr-Xc-k0e" secondAttribute="bottom" constant="20" id="vh7-gk-NVi"/>
+                                    <constraint firstAttribute="bottom" secondItem="qHr-Xc-k0e" secondAttribute="bottom" constant="50" id="vh7-gk-NVi"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -132,22 +195,31 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="getOTPButton" destination="qHr-Xc-k0e" id="RbP-FH-urU"/>
+                        <outlet property="otpResendButton" destination="MQE-Dt-koP" id="nn8-NP-gJw"/>
+                        <outlet property="otpResendMsgLabel" destination="koF-UD-wQT" id="rq7-5S-l1S"/>
+                        <outlet property="otpResendTimeLabel" destination="rkh-e2-nM2" id="1Aq-eA-Qdy"/>
+                        <outlet property="otpStackView" destination="jQ8-Tk-Z4e" id="GHm-QF-PhO"/>
+                        <outlet property="otpTextField" destination="s5E-3q-8g9" id="H6H-EW-1Js"/>
                         <outlet property="phoneNoTextField" destination="rB6-bh-8zC" id="ALd-yy-heh"/>
-                        <outlet property="policyCheckBox" destination="sv8-rf-8cJ" id="osr-OJ-VgS"/>
-                        <outlet property="policyTextView" destination="wa6-Kg-h1k" id="IxP-Pd-TNT"/>
+                        <outlet property="policyCheckBox" destination="sv8-rf-8cJ" id="B7l-YK-bsg"/>
+                        <outlet property="policyStackView" destination="cK4-Pk-Vfj" id="Whs-2S-Bno"/>
+                        <outlet property="policyTextView" destination="wa6-Kg-h1k" id="bCb-R3-qNv"/>
                         <outlet property="screenDescLabel" destination="TIk-lG-7Lb" id="AeH-Gm-j3y"/>
                         <outlet property="screenTitleLabel" destination="lNZ-l7-oQe" id="EPZ-X6-bDD"/>
+                        <outlet property="submitButton" destination="qHr-Xc-k0e" id="cH0-V8-x4f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="59" y="-34"/>
+            <point key="canvasLocation" x="58.778625954198468" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
         <image name="gifty-powered-by-bg" width="360.33334350585938" height="368.33334350585938"/>
         <image name="square" catalog="system" width="128" height="114"/>
+        <namedColor name="FireRedColor">
+            <color red="0.87450980392156863" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="PeachOrangeColor">
             <color red="1" green="0.81568627450980391" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -32,6 +32,7 @@
 		0EBD521D2BA0624E0020552B /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EBD52152BA0624E0020552B /* Gilroy-Light.ttf */; };
 		0EBD52222BA06F6B0020552B /* LoginWithOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD52212BA06F6B0020552B /* LoginWithOTPViewController.swift */; };
 		0EBD52242BA07B800020552B /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD52232BA07B800020552B /* UIColor+Extensions.swift */; };
+		0EC6801B2BA2D94A0095C4A3 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6801A2BA2D94A0095C4A3 /* Date+Extensions.swift */; };
 		0EC919E02BA16F0A008BE451 /* MDCOutlinedTextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC919DF2BA16F0A008BE451 /* MDCOutlinedTextField+Extensions.swift */; };
 		0EC919E42BA1737F008BE451 /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC919E32BA1737F008BE451 /* CheckboxButton.swift */; };
 		0EC919E62BA17C78008BE451 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC919E52BA17C78008BE451 /* UIViewController+Extensions.swift */; };
@@ -94,6 +95,7 @@
 		0EBD52152BA0624E0020552B /* Gilroy-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.ttf"; sourceTree = "<group>"; };
 		0EBD52212BA06F6B0020552B /* LoginWithOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithOTPViewController.swift; sourceTree = "<group>"; };
 		0EBD52232BA07B800020552B /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		0EC6801A2BA2D94A0095C4A3 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		0EC919DF2BA16F0A008BE451 /* MDCOutlinedTextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MDCOutlinedTextField+Extensions.swift"; sourceTree = "<group>"; };
 		0EC919E32BA1737F008BE451 /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
 		0EC919E52BA17C78008BE451 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 				0EBD52232BA07B800020552B /* UIColor+Extensions.swift */,
 				0EC919DF2BA16F0A008BE451 /* MDCOutlinedTextField+Extensions.swift */,
 				0E2288712BA1A2320043FD1A /* String+Extensions.swift */,
+				0EC6801A2BA2D94A0095C4A3 /* Date+Extensions.swift */,
 			);
 			path = "Extensions+Helpers";
 			sourceTree = "<group>";
@@ -679,6 +682,7 @@
 				0EF782E82B9F282D00E57E0F /* AppDelegate.swift in Sources */,
 				0EC919E42BA1737F008BE451 /* CheckboxButton.swift in Sources */,
 				0E2288722BA1A2320043FD1A /* String+Extensions.swift in Sources */,
+				0EC6801B2BA2D94A0095C4A3 /* Date+Extensions.swift in Sources */,
 				0E2288702BA1A2030043FD1A /* UIAlertController.swift in Sources */,
 				0E3EDCF12BA1A66C003C3379 /* BaseViewModel.swift in Sources */,
 				0EF7831D2B9F361700E57E0F /* UIStoryboard+Extensions.swift in Sources */,

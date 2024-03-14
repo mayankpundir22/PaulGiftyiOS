@@ -12,6 +12,8 @@ extension UIColor {
     class var appRoyalBlue: UIColor { return UIColor(named: "RoyalBlueColor")! }
     class var appPeachOrange: UIColor { return UIColor(named: "PeachOrangeColor")! }
     class var appSilverGray: UIColor { return UIColor(named: "SilverGrayColor")! }
+    class var appFireRedColor: UIColor { return UIColor(named: "FireRedColor")! }
+    class var appRubyRedColor: UIColor { return UIColor(named: "RubyRedColor")! }
 
     static var randomColor: UIColor {
         return .init(hue: .random(in: 0...1), saturation: 1, brightness: 1, alpha: 1)

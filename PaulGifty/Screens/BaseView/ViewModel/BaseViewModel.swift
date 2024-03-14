@@ -30,5 +30,5 @@ class BaseViewModel: NSObject {
     var showAlertClosure: ((_ isError: Bool)->())?
     var showValidationErrorClosure: (()->())?
     var updateLoadingStatus: ((_ show: Bool)->())?
-    var reloadTableViewClosure: (()->())?
+    var reloadScreenUIClosure: (()->())?
 }

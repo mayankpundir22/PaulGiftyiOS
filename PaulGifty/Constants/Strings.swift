@@ -9,6 +9,9 @@ import Foundation
 
 
 public struct Strings {
+    static let am                           = "AM"
+    static let pm                           = "PM"
+    
     static let paulGifty                    = "Paul Gifty"
     static let accountCreationPolicy        = "By creating the account, I accept to the Privacy Policy & Terms and Conditions."
 }

@@ -20,6 +20,10 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    func showToast(_ textMessage: String) {
+        view.makeToast(textMessage)
+    }
+    
     func showLoadingIndicator() {
         if let loadingVC = Storyboard.Other.instantiateVC(type: LoadingViewController.self) {
             loadingVC.modalPresentationStyle = .fullScreen

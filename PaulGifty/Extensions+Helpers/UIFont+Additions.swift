@@ -22,7 +22,7 @@ enum FontStyle: String {
 
 extension UIFont {
     
-    static func fontWith(name:String , ofSize: CGFloat) -> UIFont {
+    static func fontWith(name: String , ofSize: CGFloat) -> UIFont {
         guard let font = UIFont(name: name, size: ofSize) else {
             return UIFont.systemFont(ofSize: ofSize)
         }
