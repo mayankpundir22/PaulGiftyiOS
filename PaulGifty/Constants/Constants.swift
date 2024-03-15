@@ -43,6 +43,7 @@ public enum AppPolicies: String {
 
 struct LimitCount {
     static let otpDigitsCount: Int          = 6
+    static let passwordDigitsCount: Int     = 6
     static let phoneNoDigitsCount: Int      = 10
     static let cardKitNoDigitsCount: Int    = 16
     static let maxCardDigitsAllowed: Int    = 4

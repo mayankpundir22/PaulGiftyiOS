@@ -326,48 +326,148 @@
             </objects>
             <point key="canvasLocation" x="813" y="-35"/>
         </scene>
-        <!--View Controller-->
+        <!--Generate Password View Controller-->
         <scene sceneID="bbV-PU-75m">
             <objects>
-                <viewController id="fBY-cr-Oin" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GeneratePasswordViewController" id="fBY-cr-Oin" customClass="GeneratePasswordViewController" customModule="PaulGifty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GpX-Kg-c9s">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="qwg-nR-ocF">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gifty-powered-by-bg" translatesAutoresizingMaskIntoConstraints="NO" id="Pdd-Ee-ums">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="358"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.25098039220000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6b-Cs-zQ2">
+                                <rect key="frame" x="0.0" y="272.66666666666669" width="393" height="545.33333333333326"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gifty-powered-by-bg" translatesAutoresizingMaskIntoConstraints="NO" id="Pdd-Ee-ums">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="358"/>
-                                        <color key="backgroundColor" red="0.01176470588" green="0.25098039220000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6b-Cs-zQ2">
-                                        <rect key="frame" x="0.0" y="272.66666666666669" width="393" height="545.33333333333326"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="a7b-IA-Eog">
+                                        <rect key="frame" x="16" y="40" width="361" height="37.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URx-mm-wfc">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <color key="textColor" name="RoyalBlueColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One last step to ensure your security!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpz-zP-fg1">
+                                                <rect key="frame" x="0.0" y="23.333333333333314" width="361" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="RoyalBlueColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="jTb-su-8CT" userLabel="MainStackView">
+                                        <rect key="frame" x="16" y="107.66666666666661" width="361" height="183.66666666666663"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="lyh-Zk-mwb" userLabel="CreatePassStackView">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="69.666666666666671"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Passcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8Z-ir-PYv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="15.666666666666666"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="RoyalBlueColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3M-Aw-BRP">
+                                                        <rect key="frame" x="0.0" y="21.666666666666686" width="361" height="48"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="AkZ-AP-Gbz"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="9i7-q8-dlO" userLabel="ConfirmPassStackView">
+                                                <rect key="frame" x="0.0" y="94.666666666666686" width="361" height="89"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Passcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cx-fg-zFc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="15.666666666666666"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="RoyalBlueColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJe-d6-T5u">
+                                                        <rect key="frame" x="0.0" y="21.666666666666686" width="361" height="48"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="TEE-eN-AhT"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will need to enter this password everytime the app is started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epu-Hg-zcl">
+                                                        <rect key="frame" x="0.0" y="75.666666666666629" width="361" height="13.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <color key="textColor" name="SilverGrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-fS-xfC">
+                                        <rect key="frame" x="16" y="446.33333333333331" width="361" height="49"/>
+                                        <color key="backgroundColor" name="RoyalBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="z9h-Mx-n0A"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
+                                            <color key="baseForegroundColor" name="PeachOrangeColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="submitButtonPressed:" destination="fBY-cr-Oin" eventType="touchUpInside" id="24j-NC-i54"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="mZR-hA-nTD"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Pdd-Ee-ums" secondAttribute="trailing" id="2Yc-ba-yUZ"/>
-                                    <constraint firstItem="mZR-hA-nTD" firstAttribute="trailing" secondItem="k6b-Cs-zQ2" secondAttribute="trailing" id="HsP-jt-Yte"/>
-                                    <constraint firstItem="Pdd-Ee-ums" firstAttribute="top" secondItem="qwg-nR-ocF" secondAttribute="top" id="LMe-b9-zgo"/>
-                                    <constraint firstItem="Pdd-Ee-ums" firstAttribute="leading" secondItem="mZR-hA-nTD" secondAttribute="leading" id="PYu-67-eUc"/>
-                                    <constraint firstItem="Pdd-Ee-ums" firstAttribute="height" secondItem="qwg-nR-ocF" secondAttribute="height" multiplier="0.42" id="Vaw-3P-Yzn"/>
-                                    <constraint firstItem="mZR-hA-nTD" firstAttribute="bottom" secondItem="k6b-Cs-zQ2" secondAttribute="bottom" id="gqI-I8-9qG"/>
-                                    <constraint firstItem="k6b-Cs-zQ2" firstAttribute="leading" secondItem="mZR-hA-nTD" secondAttribute="leading" id="kn6-Bi-au6"/>
-                                    <constraint firstItem="k6b-Cs-zQ2" firstAttribute="height" secondItem="qwg-nR-ocF" secondAttribute="height" multiplier="0.64" id="v10-Ze-UR7"/>
+                                    <constraint firstAttribute="trailing" secondItem="ULf-fS-xfC" secondAttribute="trailing" constant="16" id="KVi-eD-r4p"/>
+                                    <constraint firstAttribute="bottom" secondItem="ULf-fS-xfC" secondAttribute="bottom" constant="50" id="ZGj-hd-JsU"/>
+                                    <constraint firstItem="a7b-IA-Eog" firstAttribute="leading" secondItem="k6b-Cs-zQ2" secondAttribute="leading" constant="16" id="bRe-jL-GhM"/>
+                                    <constraint firstItem="ULf-fS-xfC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jTb-su-8CT" secondAttribute="bottom" constant="40" id="bY7-yZ-dJn"/>
+                                    <constraint firstItem="jTb-su-8CT" firstAttribute="top" secondItem="a7b-IA-Eog" secondAttribute="bottom" constant="30" id="hYb-T3-nzx"/>
+                                    <constraint firstAttribute="trailing" secondItem="jTb-su-8CT" secondAttribute="trailing" constant="16" id="nVe-Cp-LYd"/>
+                                    <constraint firstAttribute="trailing" secondItem="a7b-IA-Eog" secondAttribute="trailing" constant="16" id="rhh-C1-cCS"/>
+                                    <constraint firstItem="jTb-su-8CT" firstAttribute="leading" secondItem="k6b-Cs-zQ2" secondAttribute="leading" constant="16" id="sXb-Dt-wR7"/>
+                                    <constraint firstItem="a7b-IA-Eog" firstAttribute="top" secondItem="k6b-Cs-zQ2" secondAttribute="top" constant="40" id="wpp-1u-WLQ"/>
+                                    <constraint firstItem="ULf-fS-xfC" firstAttribute="leading" secondItem="k6b-Cs-zQ2" secondAttribute="leading" constant="16" id="zAg-AN-AjP"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1YK-yu-3I8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pdd-Ee-ums" firstAttribute="leading" secondItem="1YK-yu-3I8" secondAttribute="leading" id="06J-Gb-ZQ2"/>
+                            <constraint firstItem="k6b-Cs-zQ2" firstAttribute="leading" secondItem="1YK-yu-3I8" secondAttribute="leading" id="46e-Zw-tsX"/>
+                            <constraint firstItem="Pdd-Ee-ums" firstAttribute="height" secondItem="GpX-Kg-c9s" secondAttribute="height" multiplier="0.42" id="KPZ-1i-XUJ"/>
+                            <constraint firstItem="Pdd-Ee-ums" firstAttribute="top" secondItem="GpX-Kg-c9s" secondAttribute="top" id="Lji-iX-g0t"/>
+                            <constraint firstItem="k6b-Cs-zQ2" firstAttribute="bottom" secondItem="1YK-yu-3I8" secondAttribute="bottom" id="PBE-Dh-9i4"/>
+                            <constraint firstItem="k6b-Cs-zQ2" firstAttribute="height" secondItem="GpX-Kg-c9s" secondAttribute="height" multiplier="0.64" id="aR4-wb-p8j"/>
+                            <constraint firstItem="Pdd-Ee-ums" firstAttribute="trailing" secondItem="1YK-yu-3I8" secondAttribute="trailing" id="j4M-IO-ffS"/>
+                            <constraint firstItem="k6b-Cs-zQ2" firstAttribute="trailing" secondItem="1YK-yu-3I8" secondAttribute="trailing" id="lFF-Wa-0BV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasscodeLabel" destination="2cx-fg-zFc" id="Zee-CK-bOd"/>
+                        <outlet property="confirmPasscodeView" destination="VJe-d6-T5u" id="yl0-NA-Ioh"/>
+                        <outlet property="createPasscodeLabel" destination="R8Z-ir-PYv" id="YXm-dX-Y8e"/>
+                        <outlet property="createPasscodeView" destination="z3M-Aw-BRP" id="3Ri-pt-Tlb"/>
+                        <outlet property="mainView" destination="k6b-Cs-zQ2" id="OWV-NA-nqY"/>
+                        <outlet property="passcodeMessageLabel" destination="Epu-Hg-zcl" id="Cfg-gW-MqO"/>
+                        <outlet property="screenDescLabel" destination="Jpz-zP-fg1" id="XxC-Nx-vfN"/>
+                        <outlet property="screenTitleLabel" destination="URx-mm-wfc" id="TTh-qy-UYb"/>
+                        <outlet property="submitButton" destination="ULf-fS-xfC" id="B3v-KS-cSo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0sv-UW-prw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1576" y="-35"/>
+            <point key="canvasLocation" x="1574.8091603053435" y="-35.211267605633807"/>
         </scene>
     </scenes>
     <resources>
@@ -382,8 +482,14 @@
         <namedColor name="RoyalBlueColor">
             <color red="0.0" green="0.25098039215686274" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="SilverGrayColor">
+            <color red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

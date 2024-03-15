@@ -34,11 +34,11 @@ public struct AlertMessage {
     static let INVALID_SELECTION            = "Kindly choose one option from the available choices."
     static let INCOMPLETE_CARD_KIT_NUMBER   = "Your card kit number appears incomplete. Please enter all %d digits."
     
-    static let NO_PASSWORD                  = "Please enter a minimum %d character password."
-    static let OLD_PASSWORD                 = "Please enter old password."
-    static let NEW_PASSWORD                 = "Please enter new password."
-    static let CONFIRM_PASSWORD             = "Please enter confirm password."
-    static let MISMATCH_PASSWORD            = "Password doesn't match with confirm"
+    static let INVALID_PASSWORD             = "Please enter a minimum %d character passcode"
+    static let OLD_PASSWORD                 = "Please enter old passcode"
+    static let NEW_PASSWORD                 = "Please enter new passcode"
+    static let CONFIRM_PASSWORD             = "Please enter confirm passcode"
+    static let MISMATCH_PASSWORD            = "Passcode doesn't match with Confirm Passcode"
     
     static let MISSING_OTP                  = "Please enter the OTP and then continue.."
     static let INVALID_OTP                  = "Invalid OTP. Please try again."
@@ -47,7 +47,7 @@ public struct AlertMessage {
     static let UNKNOWN_AUTHORIZATION        = "Unknown authorization status."
     static let DEVICE_NOT_SUPPORT_CALL      = "Phone call not available on this device."
     static let DEVICE_NOT_SUPPORT_EMAIL     = "Email service is not available on this device."
-        
+    
     static let PHONE_OTP_VERIFICATION       = "We’ve sent a OTP to your registered number ending with %@. Please enter the OTP to complete phone verification."
     static let PHONE_OTP_RESEND             = "We’ve sent a new OTP to your registered number ending with %@. Please enter new OTP to complete the phone verification."
     
