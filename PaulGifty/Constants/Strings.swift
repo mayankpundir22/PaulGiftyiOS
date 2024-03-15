@@ -35,6 +35,7 @@ public struct AlertMessage {
     static let INCOMPLETE_CARD_KIT_NUMBER   = "Your card kit number appears incomplete. Please enter all %d digits."
     
     static let INVALID_PASSWORD             = "Please enter a minimum %d character passcode"
+    static let EMPTY_PASSWORD               = "Please enter a valid passcode"
     static let OLD_PASSWORD                 = "Please enter old passcode"
     static let NEW_PASSWORD                 = "Please enter new passcode"
     static let CONFIRM_PASSWORD             = "Please enter confirm passcode"

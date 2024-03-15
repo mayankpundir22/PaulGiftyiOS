@@ -17,7 +17,7 @@ class GeneratePasswordViewModel: BaseViewModel {
             return false
         }
         if newPass.count != LimitCount.passwordDigitsCount {
-            self.validationErrorMessage = String(format: AlertMessage.INVALID_PASSWORD, LimitCount.cardKitNoDigitsCount)
+            self.validationErrorMessage = String(format: AlertMessage.INVALID_PASSWORD, LimitCount.passwordDigitsCount)
             return false
         }
         guard let confirmPass = confirmPasscode?.trimmed, !confirmPass.isEmpty else {

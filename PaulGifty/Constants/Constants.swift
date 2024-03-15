@@ -49,6 +49,7 @@ struct LimitCount {
     static let maxCardDigitsAllowed: Int    = 4
     static let maxDecimalPlaces: Int        = 2
     static let maxOTPResendSeconds: Int     = 60
+    static let serverHitTimerSeconds: TimeInterval = 2
 }
 
 

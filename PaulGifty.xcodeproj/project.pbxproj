@@ -16,6 +16,8 @@
 		0E3EDCF12BA1A66C003C3379 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3EDCF02BA1A66C003C3379 /* BaseViewModel.swift */; };
 		0E404A6A2BA40B2500E53D88 /* OTPStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E404A692BA40B2500E53D88 /* OTPStackView.swift */; };
 		0E404A6C2BA40B5100E53D88 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E404A6B2BA40B5100E53D88 /* OTPTextField.swift */; };
+		0E5A8B2C2BA467460030F7DF /* LoginWithPasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8B2B2BA467460030F7DF /* LoginWithPasscodeViewController.swift */; };
+		0E5A8B2E2BA467530030F7DF /* LoginWithPasscodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8B2D2BA467530030F7DF /* LoginWithPasscodeViewModel.swift */; };
 		0E76203B2BA3281700FBC647 /* GeneratePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E76203A2BA3281700FBC647 /* GeneratePasswordViewController.swift */; };
 		0E76203D2BA3282500FBC647 /* GeneratePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E76203C2BA3282500FBC647 /* GeneratePasswordViewModel.swift */; };
 		0E9769062BA02262008BFDE6 /* LaunchAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9769052BA02262008BFDE6 /* LaunchAnimationViewController.swift */; };
@@ -85,6 +87,8 @@
 		0E3EDCF02BA1A66C003C3379 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		0E404A692BA40B2500E53D88 /* OTPStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPStackView.swift; sourceTree = "<group>"; };
 		0E404A6B2BA40B5100E53D88 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		0E5A8B2B2BA467460030F7DF /* LoginWithPasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithPasscodeViewController.swift; sourceTree = "<group>"; };
+		0E5A8B2D2BA467530030F7DF /* LoginWithPasscodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithPasscodeViewModel.swift; sourceTree = "<group>"; };
 		0E76203A2BA3281700FBC647 /* GeneratePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordViewController.swift; sourceTree = "<group>"; };
 		0E76203C2BA3282500FBC647 /* GeneratePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordViewModel.swift; sourceTree = "<group>"; };
 		0E9769052BA02262008BFDE6 /* LaunchAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimationViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +205,23 @@
 			path = OTPView;
 			sourceTree = "<group>";
 		};
+		0E5A8B292BA466F50030F7DF /* LoginWithPasscodeView */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A8B2B2BA467460030F7DF /* LoginWithPasscodeViewController.swift */,
+				0E5A8B2A2BA4672D0030F7DF /* ViewModel */,
+			);
+			path = LoginWithPasscodeView;
+			sourceTree = "<group>";
+		};
+		0E5A8B2A2BA4672D0030F7DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A8B2D2BA467530030F7DF /* LoginWithPasscodeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0E7620382BA3277A00FBC647 /* GeneratePasswordView */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +323,7 @@
 		0EBD521E2BA065250020552B /* AuthModule */ = {
 			isa = PBXGroup;
 			children = (
+				0E5A8B292BA466F50030F7DF /* LoginWithPasscodeView */,
 				0EBD52202BA06F110020552B /* LoginWithOTPView */,
 				0EFC8A4A2BA3123000574F2A /* MapExistingCardView */,
 				0E7620382BA3277A00FBC647 /* GeneratePasswordView */,
@@ -728,6 +750,7 @@
 				0E2288742BA1A2DC0043FD1A /* UIApplication+Extensions.swift in Sources */,
 				0EC919E62BA17C78008BE451 /* UIViewController+Extensions.swift in Sources */,
 				0EC919E02BA16F0A008BE451 /* MDCOutlinedTextField+Extensions.swift in Sources */,
+				0E5A8B2C2BA467460030F7DF /* LoginWithPasscodeViewController.swift in Sources */,
 				0E3EDCEF2BA1A65A003C3379 /* BaseViewController.swift in Sources */,
 				0E99F2122BA1C9F2002A2AA4 /* UIView+Extensions.swift in Sources */,
 				0EF7831F2B9F365900E57E0F /* NSObject+Extensions.swift in Sources */,
@@ -752,6 +775,7 @@
 				0E99F20E2BA1A9B4002A2AA4 /* LoadingViewController.swift in Sources */,
 				0EF782EA2B9F282D00E57E0F /* SceneDelegate.swift in Sources */,
 				0E9769062BA02262008BFDE6 /* LaunchAnimationViewController.swift in Sources */,
+				0E5A8B2E2BA467530030F7DF /* LoginWithPasscodeViewModel.swift in Sources */,
 				0E76203D2BA3282500FBC647 /* GeneratePasswordViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
