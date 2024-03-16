@@ -58,6 +58,8 @@ public struct AlertMessage {
     static let EMAIL_SENT                   = "Email sent successfully."
     static let PASS_RESET_EMAIL_SENT        = "Password reset email sent successfully"
     static let PROFILE_UPDATED              = "Your profile updated successfully."
+    
+    static let CALL_TO_CUSTOMER_CARE        = "Do you wan to call customer care for your query?"
     static let ACCEPT_POLICY_AND_TERMS      = "To use our service, you must agree to the Privacy Policy and Terms & Conditions."
     
     static let LOGOUT                       = "Do you want to logout?"

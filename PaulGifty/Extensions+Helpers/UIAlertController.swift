@@ -15,6 +15,7 @@ enum AlertAction:String {
     case Delete
     case Yes
     case No
+    case Call
     case Confirm
     case Logout
     

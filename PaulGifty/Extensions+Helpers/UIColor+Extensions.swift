@@ -10,10 +10,18 @@ import UIKit
 
 extension UIColor {
     class var appRoyalBlue: UIColor { return UIColor(named: "RoyalBlueColor")! }
+    class var appMidnightBlue: UIColor { return UIColor(named: "MidnightBlueColor")! }
+    
     class var appPeachOrange: UIColor { return UIColor(named: "PeachOrangeColor")! }
+    class var appGoldenPeach: UIColor { return UIColor(named: "GoldenPeachColor")! }
+    
+    class var appFireRed: UIColor { return UIColor(named: "FireRedColor")! }
+    class var appRubyRed: UIColor { return UIColor(named: "RubyRedColor")! }
+    
+    class var appSoftPink: UIColor { return UIColor(named: "SoftPinkColor")! }
+    class var appDustyRose: UIColor { return UIColor(named: "DustyRoseColor")! }
+    
     class var appSilverGray: UIColor { return UIColor(named: "SilverGrayColor")! }
-    class var appFireRedColor: UIColor { return UIColor(named: "FireRedColor")! }
-    class var appRubyRedColor: UIColor { return UIColor(named: "RubyRedColor")! }
 
     static var randomColor: UIColor {
         return .init(hue: .random(in: 0...1), saturation: 1, brightness: 1, alpha: 1)

@@ -1,8 +1,8 @@
 //
-//  UIStoryboard+Extensions.swift
+//  Storyboard.swift
 //  PaulGifty
 //
-//  Created by Mayank Pundir on 11/03/24.
+//  Created by Mayank Pundir on 16/03/24.
 //
 
 import UIKit
@@ -10,7 +10,7 @@ import UIKit
 
 enum Storyboard: String {
     case Auth
-    case Main
+    case Home
     case Other
 }
 

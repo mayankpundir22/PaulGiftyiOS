@@ -189,7 +189,7 @@ extension LoginWithOTPViewController {
     private func startOTPTimer() {
         invalidateOTPTimer()
         otpResendButton.isEnabled = false
-        otpResendButton.setTitleColor(UIColor.appFireRedColor.withAlphaComponent(0.5), for: .normal)
+        otpResendButton.setTitleColor(UIColor.appFireRed.withAlphaComponent(0.5), for: .normal)
         
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] timer in
             guard let self = self else { return }
@@ -198,7 +198,7 @@ extension LoginWithOTPViewController {
             if !(self.timerSeconds > 0) {
                 self.invalidateOTPTimer()
                 self.otpResendButton.isEnabled = true
-                self.otpResendButton.setTitleColor(UIColor.appFireRedColor, for: .normal)
+                self.otpResendButton.setTitleColor(UIColor.appFireRed, for: .normal)
             }
         }
     }
