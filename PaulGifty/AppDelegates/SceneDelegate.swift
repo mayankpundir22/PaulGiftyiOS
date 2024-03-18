@@ -73,7 +73,7 @@ extension SceneDelegate {
         //MARK: Testing Purpose Only - Bypass the logic ----
         let navController = UINavigationController()
         //let firstVC = Storyboard.Auth.instantiateVC(type: LoginWithOTPViewController.self)!
-        let firstVC = Storyboard.Home.instantiateVC(type: MenuViewController.self)!
+        let firstVC = Storyboard.Home.instantiateVC(type: HomeViewController.self)!
         navController.viewControllers = [firstVC]
         self.window?.rootViewController = navController
          //-------------------------------- Testing Only ----------------------------------------------

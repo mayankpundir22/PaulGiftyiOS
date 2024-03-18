@@ -51,6 +51,10 @@
 		0EC919E62BA17C78008BE451 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC919E52BA17C78008BE451 /* UIViewController+Extensions.swift */; };
 		0EC919E82BA18AF6008BE451 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC919E72BA18AF6008BE451 /* Strings.swift */; };
 		0EC919EA2BA18B05008BE451 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC919E92BA18B05008BE451 /* Constants.swift */; };
+		0EE23F3C2BA5B16900EB71AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE23F3B2BA5B16900EB71AE /* HomeViewController.swift */; };
+		0EE23F3E2BA5B17700EB71AE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE23F3D2BA5B17700EB71AE /* HomeViewModel.swift */; };
+		0EE23F422BA5C15900EB71AE /* CardPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE23F402BA5C15900EB71AE /* CardPickerTableViewCell.swift */; };
+		0EE23F432BA5C15900EB71AE /* CardPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE23F412BA5C15900EB71AE /* CardPickerTableViewCell.xib */; };
 		0EF782E82B9F282D00E57E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF782E72B9F282D00E57E0F /* AppDelegate.swift */; };
 		0EF782EA2B9F282D00E57E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF782E92B9F282D00E57E0F /* SceneDelegate.swift */; };
 		0EF782F12B9F282E00E57E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF782F02B9F282E00E57E0F /* Assets.xcassets */; };
@@ -126,6 +130,10 @@
 		0EC919E52BA17C78008BE451 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		0EC919E72BA18AF6008BE451 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		0EC919E92BA18B05008BE451 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0EE23F3B2BA5B16900EB71AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0EE23F3D2BA5B17700EB71AE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0EE23F402BA5C15900EB71AE /* CardPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPickerTableViewCell.swift; sourceTree = "<group>"; };
+		0EE23F412BA5C15900EB71AE /* CardPickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardPickerTableViewCell.xib; sourceTree = "<group>"; };
 		0EF782E42B9F282D00E57E0F /* PaulGifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaulGifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF782E72B9F282D00E57E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF782E92B9F282D00E57E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -337,7 +345,9 @@
 		0EA3F2D82BA55AE100E4959B /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				0EE23F3B2BA5B16900EB71AE /* HomeViewController.swift */,
 				0EA3F2D92BA55AE900E4959B /* ViewModel */,
+				0EE23F3F2BA5C13200EB71AE /* View */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -345,6 +355,7 @@
 		0EA3F2D92BA55AE900E4959B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0EE23F3D2BA5B17700EB71AE /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -418,6 +429,15 @@
 			path = ReusableViews;
 			sourceTree = "<group>";
 		};
+		0EE23F3F2BA5C13200EB71AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0EE23F402BA5C15900EB71AE /* CardPickerTableViewCell.swift */,
+				0EE23F412BA5C15900EB71AE /* CardPickerTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0EF782DB2B9F282D00E57E0F = {
 			isa = PBXGroup;
 			children = (
@@ -444,7 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				0EA3F2E62BA584CB00E4959B /* New Group */,
-				0EF783172B9F287C00E57E0F /* Delegates */,
+				0EF783172B9F287C00E57E0F /* AppDelegates */,
 				0EC919DC2BA16C07008BE451 /* ReusableViews */,
 				0EF783182B9F289200E57E0F /* Screens */,
 				0E9769012BA013FA008BFDE6 /* Storyboards */,
@@ -475,13 +495,13 @@
 			path = PaulGiftyUITests;
 			sourceTree = "<group>";
 		};
-		0EF783172B9F287C00E57E0F /* Delegates */ = {
+		0EF783172B9F287C00E57E0F /* AppDelegates */ = {
 			isa = PBXGroup;
 			children = (
 				0EF782E72B9F282D00E57E0F /* AppDelegate.swift */,
 				0EF782E92B9F282D00E57E0F /* SceneDelegate.swift */,
 			);
-			path = Delegates;
+			path = AppDelegates;
 			sourceTree = "<group>";
 		};
 		0EF783182B9F289200E57E0F /* Screens */ = {
@@ -672,6 +692,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE23F432BA5C15900EB71AE /* CardPickerTableViewCell.xib in Resources */,
 				0EF782F42B9F282E00E57E0F /* LaunchScreen.storyboard in Resources */,
 				0EBD521A2BA0624E0020552B /* Gilroy-SemiBoldItalic.ttf in Resources */,
 				0EBD52182BA0624E0020552B /* Gilroy-Medium.ttf in Resources */,
@@ -816,6 +837,7 @@
 				0EFC8A4C2BA3128300574F2A /* MapExistingCardViewController.swift in Sources */,
 				0EBD520B2BA05CC70020552B /* UIFont+Additions.swift in Sources */,
 				0EBD52242BA07B800020552B /* UIColor+Extensions.swift in Sources */,
+				0EE23F3C2BA5B16900EB71AE /* HomeViewController.swift in Sources */,
 				0E2288742BA1A2DC0043FD1A /* UIApplication+Extensions.swift in Sources */,
 				0EC919E62BA17C78008BE451 /* UIViewController+Extensions.swift in Sources */,
 				0EC919E02BA16F0A008BE451 /* MDCOutlinedTextField+Extensions.swift in Sources */,
@@ -831,9 +853,11 @@
 				0EFC8A4E2BA3129200574F2A /* MapExistingCardViewModel.swift in Sources */,
 				0EA3F2E82BA584ED00E4959B /* Storyboard.swift in Sources */,
 				0E76203B2BA3281700FBC647 /* GeneratePasswordViewController.swift in Sources */,
+				0EE23F3E2BA5B17700EB71AE /* HomeViewModel.swift in Sources */,
 				0E99F2102BA1C90D002A2AA4 /* RectViewWithTransparentCircle.swift in Sources */,
 				0EA3F2D62BA55A9600E4959B /* TabBarController.swift in Sources */,
 				0EA3F2EA2BA5852700E4959B /* Utility.swift in Sources */,
+				0EE23F422BA5C15900EB71AE /* CardPickerTableViewCell.swift in Sources */,
 				0EC919E82BA18AF6008BE451 /* Strings.swift in Sources */,
 				0E97690E2BA024D8008BFDE6 /* AppInstance.swift in Sources */,
 				0E404A6A2BA40B2500E53D88 /* OTPStackView.swift in Sources */,

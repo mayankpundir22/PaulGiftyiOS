@@ -14,6 +14,7 @@ extension UIColor {
     
     class var appPeachOrange: UIColor { return UIColor(named: "PeachOrangeColor")! }
     class var appGoldenPeach: UIColor { return UIColor(named: "GoldenPeachColor")! }
+    class var appGoldenrodBrown: UIColor { return UIColor(named: "GoldenrodBrownColor")! }
     
     class var appFireRed: UIColor { return UIColor(named: "FireRedColor")! }
     class var appRubyRed: UIColor { return UIColor(named: "RubyRedColor")! }
